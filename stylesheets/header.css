@@ -1,0 +1,31 @@
+.ht-header {
+  background: #f0f0f0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  float: left;
+  width: 100%;
+}
+
+.ht-header .ht-logo {
+  float: left;
+}
+
+.ht-header .ht-logo a {
+  display: block;
+  width: 200px;
+  height: 100px;
+  background: url(http://placehold.it/200x100&text=Logo-200x100) no-repeat
+}
+
+.ht-header nav ul {
+  list-style: none;
+  float: right;
+}
+
+.ht-header nav ul li {
+  display: inline-block;
+}
+
+.social-link {
+  float: right;
+}
