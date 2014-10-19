@@ -1,5 +1,5 @@
 .ht-header {
-  background: #f0f0f0;
+  background: #888;
   padding-top: 40px;
   padding-bottom: 40px;
   float: left;
@@ -14,18 +14,73 @@
   display: block;
   width: 200px;
   height: 100px;
-  background: url(http://placehold.it/200x100&text=Logo-200x100) no-repeat
+  background: url(http://placehold.it/200x100&text=Logo-200x100) no-repeat;
+}
+
+.ht-header nav,
+.social-link {
+  margin-top: 40px;
+  float: right;
+}
+
+.ht-header nav {
+  margin-right: 40px;
 }
 
 .ht-header nav ul {
   list-style: none;
-  float: right;
 }
 
 .ht-header nav ul li {
   display: inline-block;
+  margin-left: 10px;
 }
 
-.social-link {
-  float: right;
+.ht-header nav a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.ht-header nav a:hover {
+  text-decoration: underline;
+}
+
+.social-link a {
+  margin-left: 10px;
+  padding: 10px;
+  background: #3b5998;
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-link a:hover {
+  opacity: .8;
+}
+
+.social-link a:nth-child(2) {
+  background: #4099FF;
+}
+
+.social-link a:nth-child(3) {
+  background: #d34836;
+}
+
+@media all and (max-width: 800px) {
+  .ht-header {
+    text-align: center;
+  }
+
+  .ht-header .ht-logo {
+    float: none;
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+
+  .ht-header nav,
+  .social-link {
+    float: none;
+    margin: 0;
+    margin-bottom: 30px;
+  }
 }

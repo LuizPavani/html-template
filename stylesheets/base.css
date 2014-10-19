@@ -1,6 +1,14 @@
 .ht-limit {
   width: 960px;
   margin: 0 auto;
+  overflow: hidden;
+}
+
+
+@media all and (max-width: 1024px) {
+  .ht-limit{
+    width: 95%;
+  }
 }
 
 .ht-replacement {
