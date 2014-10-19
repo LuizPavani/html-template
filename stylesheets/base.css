@@ -1,0 +1,10 @@
+.ht-limit {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.ht-replacement {
+  overflow: hidden;
+  text-indent: -9999px;
+  display: block;
+}
