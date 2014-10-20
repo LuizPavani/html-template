@@ -4,6 +4,19 @@
   padding-bottom: 40px;
   float: left;
   width: 100%;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.ht-header:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  /*width: 100px;*/
+  margin-left: -10px;
+  border: 20px solid transparent;
+  border-top-color: #888;
 }
 
 .ht-header .ht-logo {

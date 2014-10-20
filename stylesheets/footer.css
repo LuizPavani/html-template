@@ -19,4 +19,14 @@
 .ht-footer ul li a {
   color: #666;
   text-decoration: none;
+  background: #ddd;
+  padding: 4px 10px;
+  border-radius: 5px;
+  display: block;
+  transition: background .2s linear;
+}
+
+.ht-footer ul li a:hover {
+  color: #fff;
+  background: #444;
 }

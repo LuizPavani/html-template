@@ -4,6 +4,56 @@
   overflow: hidden;
 }
 
+.ht-replacement {
+  overflow: hidden;
+  text-indent: -9999px;
+  display: block;
+}
+
+.ht-wrap {
+  margin-bottom: 40px;
+  clear: both;
+}
+
+.ht-row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.ht-row:before,
+.ht-row:after {
+  content: "";
+  display: table;
+}
+
+.ht-row:after {
+  clear: both;
+}
+
+
+.ht-row + .ht-row {
+  margin-top: 20px;
+}
+
+.ht-col-3 {
+  float: left;
+  width: 33.3%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.ht-col-4 {
+  float: left;
+  width: 25%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+[class^="ht-col-"] img {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
 
 @media all and (max-width: 1024px) {
   .ht-limit{
@@ -11,8 +61,17 @@
   }
 }
 
-.ht-replacement {
-  overflow: hidden;
-  text-indent: -9999px;
-  display: block;
+@media all and (max-width: 800px) {
+  .ht-wrap {
+    padding: 0 20px;
+  }
+
+  [class^="ht-col-"] {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .ht-col-4 {
+    width: 50%;
+  }
 }
